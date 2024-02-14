@@ -1,0 +1,108 @@
+.outter-div{
+    position: absolute;
+    border: 1px solid black;
+    height: 600px;
+    width: 600px;
+    padding: 10px;
+}
+
+.square{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.s1:hover {
+    box-shadow: 0 0 0 3px rgb(230, 8, 8) inset;
+}
+
+.s2,
+.s3,
+.s4,
+.s5 {
+    opacity: 1; /* Set the default opacity */
+    transition: all 0.3s ease-in-out; /* Apply transition for opacity */
+}
+
+.s1:hover ~ .s2,
+.s1:hover ~ .s3,
+.s1:hover ~ .s4,
+.s1:hover ~ .s5 {
+    opacity: 0; /* Set opacity to 0 when hovering over .s1 */
+}
+
+
+
+
+
+.s2{
+    top: -100px;
+    left: 100px;
+    background-image: url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg');
+}
+.s2:hover {
+    box-shadow: 0 0 0 3px rgb(6, 211, 226) inset;
+}
+
+
+.s3,
+.s4,
+.s5 {
+    opacity: 1; /* Set the default opacity */
+    transition: all 0.3s ease-in-out; /* Apply transition for opacity */
+}
+
+.s2:hover ~ .s3,
+.s2:hover ~ .s4,
+.s2:hover ~ .s5 {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.s3{
+    top: -200px;
+    left: 200px;
+    background-image: url('https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D');
+}
+.s3:hover{
+    box-shadow:0px 0px 0px 3px rgb(49, 13, 134) inset; 
+}
+
+.s4,
+.s5 {
+    opacity: 1; /* Set the default opacity */
+    transition: all 0.3s ease-in-out; /* Apply transition for opacity */
+}
+.s3:hover ~ .s4,
+.s3:hover ~ .s5 {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.s4{
+    top: -300px;
+    left: 300px;
+    background-image: url('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630');
+
+}
+.s4:hover{
+    box-shadow:0px 0px 0px 3px rgb(8, 97, 109) inset; 
+}
+.s4:hover +  .s5{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+ }
+.s5{
+    top: -400px;
+    left: 400px;
+    background-image: url('https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=');
+
+}
+.s5:hover{
+    box-shadow:0px 0px 0px 3px rgb(97, 57, 6) inset; 
+}
