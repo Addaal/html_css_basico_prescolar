@@ -1,5 +1,11 @@
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .outter-div{
-    position: absolute;
+    position: relative;
     border: 1px solid black;
     height: 600px;
     width: 600px;
